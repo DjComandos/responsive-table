@@ -19,15 +19,3 @@ window.responsiveTable = (function (){
 			breakPoint + ') { ' + responsiveRules + ' }', 0);
 	};
 })();
-
-
-
-function makeTableResponsive(){
-	var headers = document.querySelectorAll('.responsive-table th');
-	for(var i = 0, len = headers.length; i < len; i++) {
-		/*style.sheet.addRule('td:nth-of-type(' + i + '):before', 
-			'content: "' + headers[i].innerHTML + '"');/**/
-		addCSSRule(document.styleSheets[0], 'td:nth-of-type(' + i + '):before', 
-			'content: "' + headers[i].innerHTML + '"');
-	}
-}
