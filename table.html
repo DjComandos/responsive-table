@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Table</title>
+	<link rel="stylesheet" href="table.css">
+	<script type="text/javascript" src="table.js"></script>
+</head>
+<body>
+	<table class='responsive-table'>
+		<thead>
+		<tr>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Job Title</th>
+			<th>Company</th>
+			<th>Client</th>
+			<th>Car</th>
+			<th>Facebook Profile</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Mikita</td>
+			<td>Manko</td>
+			<td>Senior Software Engineer</td>
+			<td>EPAM Systems</td>
+			<td>Google</td>
+			<td>Mercedes Benz</td>
+			<td><a target='_blank' href='http://facebook.com/Mikita.Manko'>http://facebook.com/Mikita.Manko</td>
+		</tr>
+		<tr>
+			<td>James</td>
+			<td>Smith</td>
+			<td>Software Engineer</td>
+			<td>EPAM Systems</td>
+			<td>MTV</td>
+			<td>Toyota</td>
+			<td><a target='_blank' href='http://facebook.com/Mikita.Manko'>http://facebook.com/James.Smith</td>
+		</tr>
+		<tr>
+			<td>Johh</td>
+			<td>Watson</td>
+			<td>Lead Software Engineer</td>
+			<td>EPAM Systems</td>
+			<td>Viacom</td>
+			<td>BMW</td>
+			<td><a target='_blank' href='http://facebook.com/Mikita.Manko'>http://facebook.com/John.Watson</td>
+		</tr>
+		<tr>
+			<td>Sherlok</td>
+			<td>Holmes</td>
+			<td>Chief Software Engineer</td>
+			<td>EPAM Systems</td>
+			<td>Reuters</td>
+			<td>Range Rover</td>
+			<td><a target='_blank' href='http://facebook.com/Mikita.Manko'>http://facebook.com/Sherlok.Holmes</td>
+		</tr>
+		</tbody>
+	</table>
+<script type="text/javascript">
+document.onreadystatechange = function () {
+	if (document.readyState == "complete") {
+		responsiveTable(document.querySelectorAll('.responsive-table')[0], '880px');
+	}
+}
+</script>
+</body>
+</html>
