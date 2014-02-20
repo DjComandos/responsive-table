@@ -18,7 +18,8 @@ window.responsiveTable = (function (){
 
 		document.styleSheets[0].insertRule('@media (max-width : ' + 
 			breakPoint + ') { ' + responsiveRules + ' }', 0);
-	};
+	}
+    
     return {
         itemized: itemized
     };
