@@ -27,5 +27,10 @@ td, th {
 	border: 1px solid #ddd; 
 	text-align: left; 
 }
-
+/**
+ * Itemized Styles Customisation.
+ */
+tr td:before {
+	left: 6px;
+}
 
